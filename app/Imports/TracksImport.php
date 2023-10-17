@@ -24,11 +24,11 @@ class TracksImport implements ToModel, SkipsOnError
     {
         // Handle the exception how you'd like.
     }
+
     /**
-    * @param array $row
-    *
-    * @return \Illuminate\Database\Eloquent\Model|null
-    */
+     * @param array $row
+     * @return TrackList
+     */
     public function model(array $row)
     {
         return new TrackList([
